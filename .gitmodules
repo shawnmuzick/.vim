@@ -13,15 +13,15 @@
 [submodule "pack/plugins/start/vim-javascript"]
 	path = pack/plugins/start/vim-javascript
 	url = https://github.com/pangloss/vim-javascript.git
-[submodule "pack/plugins/start/emmet-vim"]
-	path = pack/plugins/start/emmet-vim
-	url = https://github.com/mattn/emmet-vim.git
-[submodule "/home/shawn/.vim/pack/plugins/start/ctrlp"]
-	path = /home/shawn/.vim/pack/plugins/start/ctrlp
-	url = https://github.com/ctrlpvim/ctrlp.vim.git
 [submodule "pack/plugins/start/coc.nvim"]
 	path = pack/plugins/start/coc.nvim
 	url = https://github.com/neoclide/coc.nvim.git
 [submodule "pack/plugins/start/nerdtree"]
 	path = pack/plugins/start/nerdtree
 	url = https://github.com/preservim/nerdtree.git
+[submodule "pack/plugins/start/emmet-vim"]
+	path = pack/plugins/start/emmet-vim
+	url = https://github.com/mattn/emmet-vim.git
+[submodule "pack/plugins/start/ctrlp.vim"]
+	path = pack/plugins/start/ctrlp.vim
+	url = https://github.com/ctrlpvim/ctrlp.vim.git
