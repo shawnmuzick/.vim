@@ -16,6 +16,7 @@ set colorcolumn=80
 set ts=2 sw=2
 let loaded_matchparen = 1
 hi Normal guibg=NONE ctermbg=NONE
+highlight ColorColumn ctermbg=blue
 let g:airline_theme='onedark'
 let g:airline#extensions#tabline#enabled = 1
 filetype plugin indent on
