@@ -14,6 +14,7 @@ set scrolloff=10
 set signcolumn=yes
 set colorcolumn=80
 set ts=2 sw=2
+set splitright
 let loaded_matchparen = 1
 hi Normal guibg=NONE ctermbg=NONE
 highlight ColorColumn ctermbg=blue
@@ -42,10 +43,17 @@ vnoremap <C-k> :m '<-2<CR>gv=gv
 "always open buffer in new tab
 nnoremap gf <C-W>gf
 vnoremap gf <C-W>gf
-
+"command abbreviations
+"make verm always vertical split right
+ca term vert term
 " remaps with custom leader/command key
 let mapleader = " "
 nmap <leader>tr :NERDTreeToggle<CR>
+map <leader>vv :Vifm<CR>
+map <leader>vs :VsplitVifm<CR>
+map <leader>sp :SplitVifm<CR>
+map <leader>dv :DiffVifm<CR>
+map <leader>tv :TabVifm<CR>
 
 " custom functions and autogroups
 fun! TrimWhitespace()
