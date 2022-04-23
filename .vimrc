@@ -15,6 +15,7 @@ set signcolumn=yes
 set colorcolumn=80
 set ts=2 sw=2
 set splitright
+set splitbelow
 let loaded_matchparen = 1
 hi Normal guibg=NONE ctermbg=NONE
 highlight ColorColumn ctermbg=blue
@@ -22,8 +23,10 @@ let g:airline_theme='onedark'
 let g:airline#extensions#tabline#enabled = 1
 filetype plugin indent on
 let g:ycm_cache_monifunc = 0
+colorscheme codedark
 
 "remaps
+let mapleader = " "
 nmap <F6> :NERDTreeToggle<CR>
 inoremap kj <Esc>
 inoremap { {}<left>
@@ -34,20 +37,27 @@ nnoremap Y y$
 "center cursor on screen while searching n
 nnoremap n nzz
 "moving lines
-nnoremap <C-j> :m .+1<CR>==
 nnoremap <C-k> :m .-2<CR>==
+nnoremap <C-j> :m .+1<CR>==
 inoremap <C-j> <Esc>:m .+1<CR>==gi
 inoremap <C-k> <Esc>:m .-2<CR>==gi
 vnoremap <C-j> :m '>+1<CR>gv=gv
 vnoremap <C-k> :m '<-2<CR>gv=gv
+vnoremap gf <C-W>gf
 "always open buffer in new tab
 nnoremap gf <C-W>gf
-vnoremap gf <C-W>gf
+"splits
+nnoremap <silent> <C-left> :vertical resize +3<CR>
+nnoremap <silent> <C-right> :vertical resize -3<CR>
+nnoremap <silent> <C-up> :resize +3<CR>
+nnoremap <silent> <C-down> :resize -3<CR>
+map <leader>th <c-w>t<c-w>H
+map <leader>tk <c-w>t<c-w>K
+"terminal
+map <leader>tt :term<CR>
 "command abbreviations
 "make verm always vertical split right
-ca term vert term
-" remaps with custom leader/command key
-let mapleader = " "
+"ca term vert term
 nmap <leader>tr :NERDTreeToggle<CR>
 map <leader>vv :Vifm<CR>
 map <leader>vs :VsplitVifm<CR>
