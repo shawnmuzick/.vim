@@ -24,6 +24,8 @@ let g:airline#extensions#tabline#enabled = 1
 filetype plugin indent on
 let g:ycm_cache_monifunc = 0
 colorscheme codedark
+"nerdtree open new tab by default, or just use "t"
+"let NERDTreeMapOpenInTab='<ENTER>'
 
 "remaps
 let mapleader = " "
@@ -32,6 +34,8 @@ inoremap kj <Esc>
 inoremap { {}<left>
 inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
+"easier window management
+nnoremap <leader>w <C-w>
 "capital Y now just goes from cursor to end of line, like capital D and C
 nnoremap Y y$
 "center cursor on screen while searching n
@@ -39,8 +43,8 @@ nnoremap n nzz
 "moving lines
 nnoremap <C-k> :m .-2<CR>==
 nnoremap <C-j> :m .+1<CR>==
-inoremap <C-j> <Esc>:m .+1<CR>==gi
 inoremap <C-k> <Esc>:m .-2<CR>==gi
+inoremap <C-j> <Esc>:m .+1<CR>==gi
 vnoremap <C-j> :m '>+1<CR>gv=gv
 vnoremap <C-k> :m '<-2<CR>gv=gv
 vnoremap gf <C-W>gf
@@ -53,6 +57,8 @@ nnoremap <silent> <C-up> :resize +3<CR>
 nnoremap <silent> <C-down> :resize -3<CR>
 map <leader>th <c-w>t<c-w>H
 map <leader>tk <c-w>t<c-w>K
+"buffers
+nnoremap <leader>bk :bw<CR>
 "terminal
 map <leader>tt :term<CR>
 "command abbreviations
