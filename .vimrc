@@ -55,6 +55,7 @@ nnoremap <silent> <C-left> :vertical resize +3<CR>
 nnoremap <silent> <C-right> :vertical resize -3<CR>
 nnoremap <silent> <C-up> :resize +3<CR>
 nnoremap <silent> <C-down> :resize -3<CR>
+"flip orientation
 map <leader>th <c-w>t<c-w>H
 map <leader>tk <c-w>t<c-w>K
 "buffers
