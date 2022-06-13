@@ -22,7 +22,7 @@ fi
 
 # Build Coc Enhancements
 echo Building Coc Enhancements
-npm install coc-clangd coc-css coc-emmet coc-html coc-json coc-rome coc-tsserver \
+npm install coc-clangd coc-css coc-prettier coc-emmet coc-html coc-json coc-rome coc-tsserver \
  	--global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
 
 echo Installation Complete!

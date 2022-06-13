@@ -26,6 +26,7 @@ let g:ycm_cache_monifunc = 0
 colorscheme codedark
 "nerdtree open new tab by default, or just use "t"
 "let NERDTreeMapOpenInTab='<ENTER>'
+command! -nargs=0 Prettier :CocCommand prettier.forceFormatDocument
 
 "remaps
 let mapleader = " "
